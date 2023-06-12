@@ -1,40 +1,40 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <title>Escuela CEPSI</title>
-  <meta charset="UTF-8">
-  <!-- CSS only -->
-  <link rel="stylesheet" type="text/css" href="login.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="shortcut icon" href="favicon/favicon-32x32.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Hospitalaria</title>
+    <link rel="shortcut icon" href="favicon/favicon-32x32.png">
+  
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
 
-  <div class="grid-container">
-    <div class="grid-item item1">
-    </div>
+   <div class="container"> 
+    <div class="form-content">
+        <img src="conte1.png" alt="login-icon" style="height: 7rem;">
 
-    <div class="grid-item item2">
-      <form action="FORMHTML.html">
-        <div style="text-align: center; font-size: 20px;">Inicio de sesion</div>
-        
-        <div class="mt-3">
-          
-          <img src="hombre.png" style="height: 20px;"> <label for="user" class="form-label">Usuario</label>
-          <input type="user" class="form-control" id="user" placeholder="Usuario..." name="user">
-        </div>
-        <div class="mb-3">
-          <img src="pass.png" style="height: 20px;"><label for="pwd" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="pwd" placeholder="Contraseña..." name="pwd">
-          <a href="" style="color: blue; font-size: 13px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Desea recuperar la contraseña?</a>
-        </div>
-        
-        <button type="submit" class="btn btn-primary" style="background-color: green;">Ingresar</button>
-      </form>
+        <h1 id="title">Bienvenido</h1>
+         
+        <form action="cards.html">
+            <p>¡Por favor, introduce tu usuario y contraseña!</p>
+            <div class="input-group">
+                <div class="input-fleld" id="nameInput">
+                    <i class="fa-solid fa-user"></i>
+                    <input name="usuario" type="text" placeholder="Usuario">
+                </div>              
+                <div class="input-fleld">
+                    <i class="fa-solid fa-lock"></i>
+                    <input name="contraseña" type="password" placeholder="Contraseña">
+                </div>
+                <p>¿Olvidaste tu Contraseña?<a href="#">click aqui</a></p>               
+            </div>
+            <div class="btn-fleld">
+                <button id="signUp" type="submit">Ingresar</button>
+            </div>
+        </form>
     </div>
-  </div>
+   </div>
 </body>
-
 </html>

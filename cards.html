@@ -6,49 +6,56 @@
     <meta charset="UTF-8">
     <!-- CSS only -->
     <link rel="stylesheet" type="text/css" href="cards.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon/favicon-32x32.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="conte1.png" alt="Avatar Logo" style="width:50px;" class="rounded-pill">
-                <Label class="titulo" style="padding-left: 320px;">FRANCISCO JOSÉ VIANO</Label>
+
+    <nav class="navreg">
+        <div class="bg-dark navbar-dark" style="padding: 5px; font-size: 25px;">
+            <a class="navbar-brand" href="cards.html"
+                style="display: flex; align-items: center; justify-content:space-between;">
+                <img src="conte1.png" alt="Avatar Logo" style="width: 50px;" class="rounded-pill">
+                FRANCISCO JOSÉ VIANO
+                <p></p>
             </a>
         </div>
     </nav>
 
-    <main class="page-content">
-        <div class="card">
-            <div class="content">
-                <h2 class="title">Agregar Alumno</h2>
-                <button class="btn" onclick="location.href='AgregarA.html'">Agregar</button>
-            </div>
+    <article class="profile">
+        <div class="profile-image">
+            <img src="listar_usuario.png" />
         </div>
-        <div class="card">
-            <div class="content">
-                <h2 class="title">Eliminar Alumno</h2>
-                <button class="btn">Eliminar</button>
-            </div>
+        <h2 class="profile-username">Listar usuario</h2>
+        <div class="profile-actions">
+            <a href="FormHTML.html" class="btn btn--primary">Ingresar!</a>
         </div>
-        <div class="card">
-            <div class="content">
-                <h2 class="title">Modificar Alumno</h2>
-                <button class="btn">Modificar</button>
-            </div>
+    </article>
+    <article class="profile">
+        <div class="profile-image">
+            <img src="agregar_usuario.png" />
         </div>
-        <div class="card">
-            <div class="content">
-                <h2 class="title">Listado Alumnos</h2>
-                <button class="btn" onclick="location.href='FORMHTML.html'">Listado</button>
-            </div>
+        <h2 class="profile-username">Agregar usuario</h2>
+        <div class="profile-actions">
+            <a href="AgregarA.html" class="btn btn--primary">Ingresar!</a>
         </div>
-    </main>
+    </article>
+    <article class="profile">
+        <div class="profile-image">
+            <img src="editar.png" />
+        </div>
+        <h2 class="profile-username">Modificar usuario</h2>
+        <div class="profile-actions">
+            <a href="  " class="btn btn--primary">Ingresar!</a>
+        </div>
+    </article>
+
+
+
 
 </body>
 
