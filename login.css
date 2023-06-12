@@ -1,0 +1,40 @@
+html, body{
+    background-image: url("fondo2.jpg");
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  
+  .grid-container {
+    display: grid;
+    padding-top: 15%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .item1 {
+    background-image: url("conte1.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    grid-column: 1;
+    padding: 150px;
+  }
+  
+  .item2 {
+    text-align: center;
+    font-family: "Trirong", serif;
+    padding: 30px;
+    background-color: rgb(136, 184, 187);
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    grid-column: 2;
+    align-self: auto;
+  }
+  

@@ -1,0 +1,95 @@
+html, body{
+  background-image: url("fondo2.jpg");
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.container-fluid button {
+  margin-right: 90px;
+}
+
+.container-fluid label {
+  margin-right: 90px;
+  font-size: 25px;
+
+}
+
+.container-busc {
+  display: flex;
+  margin-right: 4px;
+  position: relative;
+  justify-content: center;
+}
+
+.container-busc label {
+  margin-right: 10px;
+  font-size: 25px;
+  color: aliceblue
+}
+
+.container-fluid {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  justify-content: center;
+}
+
+.grid-container {
+  display: flex;
+  padding: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #201e24;
+  color: aliceblue;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.dni {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.larg {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.larg-1 {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.cort {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+th {
+  color: white;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+table {
+  background-color: rgba(136, 184, 187, 0.3);
+  text-align: center;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #02ff28;
+}
