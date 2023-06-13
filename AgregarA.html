@@ -36,13 +36,13 @@
             <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
                 <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
 
-                    <form id="msform">
+                    <form id="msform" action="agregarA.php" method="post">
                         <!-- progressbar -->
                         <ul id="progressbar">
                             <li class="active" id="account"><strong>Datos personales</strong></li>
                             <li id="personal"><strong>Datos pedagogicos</strong></li>
-                            <li id="payment"><strong>Datos pedagogicos</strong></li>
-                            <li id="confirm"><strong>Finish</strong></li>
+                            <li id="payment"><strong>Datos internacion</strong></li>
+                            <li id="confirm"><strong>Finalizar</strong></li>
                         </ul>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
@@ -52,94 +52,96 @@
                             <div class="form-card">
                                 <div class="row">
                                     <label for="ape">Apellido</label>
-                                    <input type="text" class="fieldlabels" id="ape" placeholder="Apellido">
+                                    <input name="apellido" type="text" class="fieldlabels" id="ape" placeholder="Apellido">
                                     <label for="nomb">Nombre</label>
-                                    <input type="text" class="fieldlabels" id="nomb" placeholder="Nombre">
+                                    <input name="nombre" type="text" class="fieldlabels" id="nomb" placeholder="Nombre">
                                     <label for="dni">Dni</label>
-                                    <input type="text" class="fieldlabels" id="dni" placeholder="Documento">
+                                    <input name="documento" type="text" class="fieldlabels" id="dni" placeholder="Documento">
                                     <label for="sexo">Genero:</label>
                                     <select name="genero">
-                                        <option value="opcion0">Seleccionar</option>
-                                        <option value="opcion1">Femenino</option>
-                                        <option value="opcion2">Masculino</option>
+                                        <option value="Sin especificar">Seleccionar</option>
+                                        <option value="Femenino">Femenino</option>
+                                        <option value="Masculino">Masculino</option>
                                     </select>
 
                                     <label for="domc">Domicilio</label>
-                                    <input type="text" class="fieldlabels" id="domc" placeholder="Domicilio">
+                                    <input name="domicilio" type="text" class="fieldlabels" id="domc" placeholder="Domicilio">
                                     <label for="fechanac">Fecha de nacimiento</label>
-                                    <input type="date" class="fieldlabels" id="fechanac">
+                                    <input name="fecha_nacimiento" type="date" class="fieldlabels" id="fechanac">
                                     <label for="nombt">Nombre del Tutor</label>
-                                    <input type="text" class="fieldlabels" id="nombt" placeholder="Nombre tutor">
+                                    <input name="nombre_tutor" type="text" class="fieldlabels" id="nombt" placeholder="Nombre tutor">
                                 </div>
                             </div> <input type="button" name="next" class="next action-button" value="Siguiente" />
                         </fieldset>
                         <fieldset>
                             <div class="form-card">
                                 <div class="row">
+                                    <label for="fechaing">Fecha ingreso</label>
+                                    <input name="fecha_ingreso" type="date" class="fieldlabels" id="fechaing">
                                     <label for="escr">Escuela de referencia</label>
-                                    <input type="text" class="form-control" id="escr" placeholder="Escuela referencia">
+                                    <input name="escRef" type="text" class="form-control" id="escr" placeholder="Escuela referencia">
                                     <label for="sexo">Posee Escolaridad?</label>
                                     <select name="posE">
-                                        <option value="opcion0">Seleccionar</option>
-                                        <option value="opcion1">Si</option>
-                                        <option value="opcion2">No</option>
-                                        <option value="opcion3">N/S</option>
+                                        <option value="Sin especificar">Seleccionar</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        <option value="N/S">N/S</option>
                                     </select>
-                                    <label for="sexo">Escuela comun?</label>
+                                    <label for="">Escuela comun?</label>
                                     <select name="escC">
-                                        <option value="opcion0">Seleccionar</option>
-                                        <option value="opcion1">Si</option>
-                                        <option value="opcion2">No</option>
-                                        <option value="opcion3">N/S</option>
+                                        <option value="Sin especificar">Seleccionar</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        <option value="N/S">N/S</option>
                                     </select>
-                                    <label for="sexo">Escuelas especiales?</label>
+                                    <label for="">Escuelas especiales?</label>
                                     <select name="escE">
-                                        <option value="opcion0">Seleccionar</option>
-                                        <option value="opcion1">Si</option>
-                                        <option value="opcion2">No</option>
-                                        <option value="opcion3">N/S</option>
+                                        <option value="Sin especificar">Seleccionar</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        <option value="N/S">N/S</option>
                                     </select>
-                                    <label for="sexo">Lectura continua?</label>
+                                    <label for="">Lectura continua?</label>
                                     <select name="lectC">
-                                        <option value="opcion0">Seleccionar</option>
-                                        <option value="opcion1">Si</option>
-                                        <option value="opcion2">No</option>
-                                        <option value="opcion3">N/S</option>
+                                        <option value="Sin especificar">Seleccionar</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        <option value="N/S">N/S</option>
                                     </select>
-                                    <label for="sexo">Interpreta textos?</label>
+                                    <label for="">Interpreta textos?</label>
                                     <select name="interpT">
-                                        <option value="opcion0">Seleccionar</option>
-                                        <option value="opcion1">Si</option>
-                                        <option value="opcion2">No</option>
-                                        <option value="opcion3">N/S</option>
+                                        <option value="Sin especificar">Seleccionar</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        <option value="N/S">N/S</option>
                                     </select>
-                                    <label for="sexo">Reconoce sustantivos/adjetivos/verbos?</label><br>
+                                    <label for="">Reconoce sustantivos/adjetivos/verbos?</label><br>
                                     <select name="reconcSAV">
-                                        <option value="opcion0">Seleccionar</option>
-                                        <option value="opcion1">Si</option>
-                                        <option value="opcion2">No</option>
-                                        <option value="opcion3">N/S</option>
+                                        <option value="Sin especificar">Seleccionar</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        <option value="N/S">N/S</option>
                                     </select>
-                                    <label for="sexo">Elabora oraciones?</label>
+                                    <label for="">Elabora oraciones?</label>
                                     <select name="elabO">
-                                        <option value="opcion0">Seleccionar</option>
-                                        <option value="opcion1">Si</option>
-                                        <option value="opcion2">No</option>
-                                        <option value="opcion3">N/S</option>
+                                        <option value="Sin especificar">Seleccionar</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        <option value="N/S">N/S</option>
                                     </select>
-                                    <label for="sexo">Lectura y escritura?</label>
+                                    <label for="">Lectura y escritura?</label>
                                     <select name="LectyEsc">
-                                        <option value="opcion0">Seleccionar</option>
-                                        <option value="opcion1">Si</option>
-                                        <option value="opcion2">No</option>
-                                        <option value="opcion3">N/S</option>
+                                        <option value="Sin especificar">Seleccionar</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        <option value="N/S">N/S</option>
                                     </select>
-                                    <label for="sexo">Resuelve operaciones basicas?</label>
-                                    <select name="rescOpBasc">
-                                        <option value="opcion0">Seleccionar</option>
-                                        <option value="opcion1">Si</option>
-                                        <option value="opcion2">No</option>
-                                        <option value="opcion3">N/S</option>
+                                    <label for="">Resuelve operaciones basicas?</label>
+                                    <select name="resOpBasc">
+                                        <option value="Sin especificar">Seleccionar</option>
+                                        <option value="Si">Si</option>
+                                        <option value="No">No</option>
+                                        <option value="N/S">N/S</option>
                                     </select>
                                 </div>
                             </div> <input type="button" name="next" class="next action-button" value="Siguiente" />
@@ -149,8 +151,25 @@
                         <fieldset>
                             <div class="form-card">
                                 <div class="row">
-                                    ------------------------
+                                    <label for="internacion">Se encuentra internado?</label>
+                                    <select name="internacion" onchange="mostrarOcultarFormulario(this)">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="si">Sí</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                
+                                    <div id="formularioAdicional" style="display: none;">
+                                        <label for="nombt">Sala</label>
+                                        <input name="sala" type="text" class="fieldlabels" id="nombt" placeholder="Sala">
+                                        <label for="nombt">Habitacion</label>
+                                        <input name="habitacion" type="text" class="fieldlabels" id="nombt" placeholder="Habitacion">
+                                        <label for="nombt">Cama</label>
+                                        <input name="cama" type="text" class="fieldlabels" id="nombt" placeholder="Cama">
+                                        <label for="nombt">Fecha Alta</label>
+                                        <input name="fecha_alta" type="date" class="fieldlabels" id="nombt" placeholder="">
+                                    </div>
                                 </div>
+
                             </div> <input type="button" name="next" class="next action-button" value="Finalizar" />
                             <input type="button" name="previous" class="previous action-button-previous"
                                 value="Anterior" />
@@ -158,18 +177,14 @@
                         <fieldset>
                             <div class="form-card">
                                 <div class="row">
-                                    <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                    <h2 class="purple-text text-center"><strong>Finalizado!</strong></h2> <br>
                                     <div class="row justify-content-center">
                                         <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png"
                                                 class="fit-image">
                                         </div>
                                     </div> <br><br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-7 text-center">
-                                            <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
-                                        </div>
-                                    </div>
                                 </div>
+                                <button type="submit">Salir</button>
                         </fieldset>
                     </form>
                 </div>

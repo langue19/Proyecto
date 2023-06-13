@@ -1,3 +1,13 @@
+function mostrarOcultarFormulario(selectElement) {
+    var formularioAdicional = document.getElementById('formularioAdicional');
+    if (selectElement.value === 'si') {
+        formularioAdicional.style.display = 'block';
+    } else {
+        formularioAdicional.style.display = 'none';
+    }
+}
+
+
 $(document).ready(function () {
 	var current_fs, next_fs, previous_fs; //fieldsets
 	var opacity;

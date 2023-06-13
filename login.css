@@ -112,6 +112,11 @@ form p a {
   transition: background 1s;
 }
 
+.btn-fleld button:hover{
+  color: #D0D0D0;
+}
+
+
 .input-group {
   height: 90px;
 }

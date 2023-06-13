@@ -17,21 +17,22 @@
 
         <h1 id="title">Bienvenido</h1>
          
-        <form action="cards.html">
+        <form action="verificarLogin.php" method="POST">
             <p>¡Por favor, introduce tu usuario y contraseña!</p>
             <div class="input-group">
-                <div class="input-fleld" id="nameInput">
+                <div class="input-fleld">
                     <i class="fa-solid fa-user"></i>
-                    <input name="usuario" type="text" placeholder="Usuario">
+                    <input name="user" type="text" placeholder="Usuario">
                 </div>              
                 <div class="input-fleld">
                     <i class="fa-solid fa-lock"></i>
-                    <input name="contraseña" type="password" placeholder="Contraseña">
+                    <input name="psw" type="password" placeholder="Contraseña">
                 </div>
                 <p>¿Olvidaste tu Contraseña?<a href="#">click aqui</a></p>               
             </div>
             <div class="btn-fleld">
-                <button id="signUp" type="submit">Ingresar</button>
+                <button type="submit">Ingresar</button>
+                
             </div>
         </form>
     </div>
