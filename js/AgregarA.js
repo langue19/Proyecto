@@ -88,19 +88,36 @@ $(document).ready(function () {
 	});
   });
   
+  //var ciudad = document.getElementById("ciudad").selectedIndex;
 
-
-/*function validar() {
-	var user = document.getElementById("user");
-	var email = document.getElementById("email");
-	var pass1 = document.getElementById("pass1");
-	var pass2 = document.getElementById("pass2");
-	var codipos = document.getElementById("codipos");
-	var sexo = document.getElementsByName("sexo");
+function validar() {
+	var apellido = document.getElementById("ape");
+	var nombre = document.getElementById("nomb");
+	var dni = document.getElementById("dni");
+	var sexo = document.getElementsByName("genero");
 	var seleccionado = false;
-	var ciudad = document.getElementById("ciudad").selectedIndex;
-	var elementoCHECK = document.getElementById("terminos");
+	var domicilio = document.getElementById("domc");
+	var fechanac = document.getElementById("fechanac");
+	var nombre_tutor = document.getElementById("nombt");
 
+	if(apellido.value.length == 0)
+	{
+      alert("Debe ingresar el apellido");
+    	user.focus();
+    	return false;
+	}
+	if(nombre.value.length == 0)
+	{
+      alert("Debe ingresar el nombre");
+    	user.focus();
+    	return false;
+	}
+	if(dni.value.length == 0)
+	{
+      alert("Debe ingresar el documento");
+    	user.focus();
+    	return false;
+	}
 	if(user.value.length == 0)
 	{
       alert("Debe ingresar el Usuario");
@@ -149,20 +166,10 @@ $(document).ready(function () {
 		alert("Debes indicar el sexo");
 		return false;
 	}
-	if(ciudad == 0 || ciudad == null)
-	{
-		alert("Por favor, seleccione una ciudad");
-		return false;
-	}
-	if(!elementoCHECK.checked)
-	{
-		alert("Debe aceptar los términos y condiciones");
-		return false;
-	}
   else
   {
     alert("Datos de formulario enviados exitosamente.");
     document.getElementById("myForm").reset();
 	  return false;
 	}
-}*/
+}

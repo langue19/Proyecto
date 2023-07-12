@@ -19,6 +19,7 @@ $stmt->execute([$dni, $nomb, $ape, $genero, $dom, $fecha_nac, $nombTutor]);
 
 $fecha_ing= $_POST['fecha_ingreso'];
 $escRef = $_POST['escRef'];
+$grado = $_POST ['grado'];
 $poseEsc = $_POST['posE'];
 $escComun = $_POST['escC'];
 $escEspec = $_POST['escE'];
@@ -30,9 +31,9 @@ $lectYesct = $_POST['LectyEsc'];
 $resOpBasic = $_POST['resOpBasc'];
 
 
-$stmt = $conn->prepare("INSERT INTO Datos_pedagogicos(Dni, Fecha_ingreso, escRef, poseeEsc, escComun, escEspecial, lectContinua, interpTextos, reconoceSAV, elabOrac, lectyescri, resuelvOpBas) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO Datos_pedagogicos(Dni, Fecha_ingreso, escRef,Grado, poseeEsc, escComun, escEspecial, lectContinua, interpTextos, reconoceSAV, elabOrac, lectyescri, resuelvOpBas) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-$stmt->execute([$dni, $fecha_ing, $escRef, $poseEsc, $escComun, $escEspec, $LecturaCont, $InterpText, $ReconoceASV, $ElabOrac, $lectYesct, $resOpBasic]);
+$stmt->execute([$dni, $fecha_ing, $escRef, $grado, $poseEsc, $escComun, $escEspec, $LecturaCont, $InterpText, $ReconoceASV, $ElabOrac, $lectYesct, $resOpBasic]);
 
 $sala=$_POST['sala'];
 $habitacion=$_POST['habitacion'];

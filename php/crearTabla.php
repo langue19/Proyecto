@@ -41,10 +41,19 @@ try {
       CREATE TABLE Datos_pedagogicos (
         Dni INT,
         Fecha_ingreso DATE,
-        -- Aquí deberia incluir las preguntas
+        escRef VARCHAR(45),
+        Grado VARCHAR(45),
+        poseeEsc VARCHAR(45),
+        escComun VARCHAR(45),
+        escEspecial VARCHAR(45),
+        lectContinua VARCHAR(45),
+        interpTextos VARCHAR(45),
+        reconoceSAV VARCHAR(45),
+        elabOrac VARCHAR(45),
+        lectyescri VARCHAR(45),
+        resuelvOpBas VARCHAR(45),
         PRIMARY KEY (Dni, Fecha_ingreso),
-        FOREIGN KEY (Dni) REFERENCES Datos_personales(Dni)
-      );
+        FOREIGN KEY (Dni) REFERENCES Datos_personales(Dni));
       
       CREATE TABLE Datos_prof (
         Dni INT PRIMARY KEY,
@@ -63,6 +72,12 @@ try {
         FOREIGN KEY (Dni) REFERENCES Datos_personales(Dni)
       );";
     $conn->exec($sqlCrearTabla);
+
+
+    $sqlInsertar = "INSERT INTO admin(Email,Contraseña) values ('root@gmail.com','password');";
+
+    $conn->exec($sqlInsertar);
+
 
 } catch (PDOException $e) {
 

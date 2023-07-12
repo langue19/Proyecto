@@ -43,7 +43,7 @@
     background-color: #000000;
     background-repeat: repeat;
     background-size:cover;
-    background-image: url("fondo3.jpg");
+    background-image: url("/Proyecto-master/img/fondo3.jpg");
     background-attachment: fixed;
   }
   
@@ -67,9 +67,10 @@
     border: 3px solid transparent;
     background-clip: padding-box;
     text-align: center;
-    color: #f1f3f3;
+    color: #ffffff;
     background-image: linear-gradient(135deg, rgba(117, 46, 124, 0.35), rgba(115, 74, 88, 0.1) 15%, #1b2028 20%, #1b2028 100%);
   }
+  
   .profile:after {
     content: "";
     display: block;

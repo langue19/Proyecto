@@ -24,7 +24,7 @@ if ($stmt->rowCount() > 0) {
             header("location: cards.html");
             exit();
         } else {
-            header("location: login.html");
+            header("location: /Proyecto-master/login.html");
         }
 
         // Hacer algo con los datos obtenidos
